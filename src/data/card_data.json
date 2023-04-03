@@ -1,0 +1,109 @@
+{
+    "work_cards": [
+        {
+            "title": "Technical Lead",
+            "company": "Conexiom",
+            "date": "2021-08-01",
+            "description": "Leading integration projects as a lead within the Onboarding team on top of regular dev tasks",
+            "type": "work"
+        },
+        {
+            "title": "Software Developer",
+            "company": "Conexiom",
+            "date": "2019-06-01",
+            "description": "Tackling document automation as a software dev within the Onboarding team",
+            "type": "work"
+        },
+        {
+            "title": "Data Coordinator",
+            "company": "RecycleSmart Solutions",
+            "date": "2018-05-01",
+            "description": "Data Coordinatory working with some sensor data and used tons of R",
+            "type": "work"
+        },
+        {
+            "title": "Technical Lab Assistant",
+            "company": "NINET Lab @ UBC Dept. of Psychiatry",
+            "date": "2017-05-01",
+            "description": "Lab Assistant working with EEGs and MATLAB :)",
+            "type": "work"
+        },
+        {
+            "title": "Teaching Assistant",
+            "company": "UBC Dept. of Computer Science",
+            "date": "2017-01-01",
+            "description": "Teaching Assistant for CPSC 210 - Software Construction",
+            "type": "work"
+        }
+    ],
+    "project_cards": [
+        {
+            "name": "castaire.github.io",
+            "date": "2019-02-18",
+            "description": "the very website you are viewing :) (now updated to React)",
+            "links": [
+                {
+                    "description": "source",
+                    "href": "https://github.com/Castaire/persona"
+                }
+            ],
+            "type": "project"
+        },
+        {
+            "name": "Spot-Notes",
+            "date": "2019-01-01",
+            "description": "A Chrome notification that notifies you whenever a Spotify artist you follow makes a new release!",
+            "links": [
+                {
+                    "description": "source",
+                    "href": "https://github.com/Castaire/spot_notes"
+                }
+            ],
+            "type": "project"
+        },
+        {
+            "name": "Nocturne",
+            "date": "2017-01-15",
+            "description": "2D game developed in Unity for Global Game Jam 2017, featuring neon lights and invisible enemies",
+            "links": [
+                {
+                    "description": "source",
+                    "href": "https://github.com/weedle/Nocturne-GGJ2017"
+                }
+            ],
+            "type": "project"
+        },
+        {
+            "name": "theorientkelowna.com",
+            "date": "2018-05-01",
+            "description": "Website I designed, developed, and hosted for a local restaurant",
+            "links": [
+                {
+                    "description": "the site itself",
+                    "href": "https://theorientkelowna.com"
+                },
+                {
+                    "description": "source",
+                    "href": "https://github.com/Castaire/theOrientKelowna--2.0"
+                }
+            ],
+            "type": "project"
+        },
+        {
+            "name": "TSSE",
+            "date": "2016-11-28",
+            "description": "Trader Smith's Spaceship Emporium! A nifty sci-fi RPG prototype developed in Unity!",
+            "links": [
+                {
+                    "description": "source",
+                    "href": "https://github.com/weedle/TSSE2016"
+                },
+                {
+                    "description": "stand-alone UI mini project",
+                    "href": "https://github.com/Castaire/TSSE2016---Personal-Menus"
+                }
+            ],
+            "type": "project"
+        }
+    ]
+}
