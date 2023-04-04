@@ -4,35 +4,35 @@
             "title": "Technical Lead",
             "company": "Conexiom",
             "date": "2021-08-01",
-            "description": "Leading integration projects as a lead within the Onboarding team on top of regular dev tasks",
+            "description": "working integration projects within the Onboarding team on top of regular dev tasks",
             "type": "work"
         },
         {
             "title": "Software Developer",
             "company": "Conexiom",
             "date": "2019-06-01",
-            "description": "Tackling document automation as a software dev within the Onboarding team",
+            "description": "tackling document automation as a software dev within the Onboarding team",
             "type": "work"
         },
         {
             "title": "Data Coordinator",
             "company": "RecycleSmart Solutions",
             "date": "2018-05-01",
-            "description": "Data Coordinatory working with some sensor data and used tons of R",
+            "description": "working with some sensor data and used tons of R",
             "type": "work"
         },
         {
             "title": "Technical Lab Assistant",
             "company": "NINET Lab @ UBC Dept. of Psychiatry",
             "date": "2017-05-01",
-            "description": "Lab Assistant working with EEGs and MATLAB :)",
+            "description": "working with EEGs and MATLAB :)",
             "type": "work"
         },
         {
             "title": "Teaching Assistant",
             "company": "UBC Dept. of Computer Science",
             "date": "2017-01-01",
-            "description": "Teaching Assistant for CPSC 210 - Software Construction",
+            "description": "for CPSC 210 - Software Construction",
             "type": "work"
         }
     ],
