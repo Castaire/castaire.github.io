@@ -50,5 +50,9 @@ body {
 }
 
 .projectcard {
-  border-color: #87A0B2 /*whale-value*/
+  border-color: #87A0B2; /*whale-blue*/
+}
+
+.projectcard h3 {
+  border-color: #87A0B2; /*whale-blue*/
 }

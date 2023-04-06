@@ -1,17 +1,19 @@
-import React from 'react';
 
-const WorkCard = props => {
-    const classes = "card workcard"
+function WorkCard({date, title, company, description}) {
+  const classes = "card workcard";
+  const textClass = "text"
 
-    return (
-        <div className={classes} date={props.date}>
-            <div className="text">
-                <br/>
-                <h3>{props.company}</h3>
-                <p><b>{props.title}</b> {props.description}</p>
-            </div>
-        </div>
-    )
+  return (
+    <div className={classes} date={date}>
+      <div className={textClass}>
+        <br />
+        <h3>{company}</h3>
+        <p>
+          <b>{title}</b> {description}
+        </p>
+      </div>
+    </div>
+  );
 }
 
 export default WorkCard;
