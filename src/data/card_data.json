@@ -47,6 +47,7 @@
                     "href": "https://github.com/Castaire/persona"
                 }
             ],
+            "details": "testing onlyyyy",
             "type": "project"
         },
         {
@@ -59,6 +60,7 @@
                     "href": "https://github.com/Castaire/spot_notes"
                 }
             ],
+            "details": "testing onlyyyy",
             "type": "project"
         },
         {
@@ -71,10 +73,11 @@
                     "href": "https://github.com/weedle/Nocturne-GGJ2017"
                 }
             ],
+            "details": "testing onlyyyy",
             "type": "project"
         },
         {
-            "name": "theorientkelowna.com",
+            "name": "theorientkelowna",
             "date": "2018-05-01",
             "description": "Website I designed, developed, and hosted for a local restaurant",
             "links": [
@@ -87,6 +90,7 @@
                     "href": "https://github.com/Castaire/theOrientKelowna--2.0"
                 }
             ],
+            "details": "testing onlyyyy",
             "type": "project"
         },
         {
@@ -103,6 +107,7 @@
                     "href": "https://github.com/Castaire/TSSE2016---Personal-Menus"
                 }
             ],
+            "details": "testing onlyyyy",
             "type": "project"
         }
     ]

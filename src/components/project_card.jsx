@@ -1,23 +1,42 @@
+import { useState } from "react";
 
-function ProjectCard({date, name, description, techList}) {
-    const classes = "card projectcard"
+function ProjectCard({date, name, description, details}) {
+    const [showDetails, setDetails] = useState(false);
+    
+    const cardClasses = "card projectcard"
     const textClass = "text"
-
-    function handleClick() {
-        alert('clicked!');
+    
+    function flipDetails() {
+        setDetails(!showDetails);
     }
-
+    
+    function getCardContent() {
+        if (!showDetails) {
+            return (
+                <>
+                    <h3>{name}</h3>
+                    <p>{description}</p>
+                </>
+            );
+        } else {
+            return (
+                <>
+                    <p>{details}</p>
+                </>
+            );
+        }    
+    }
+    
     return (
-        <div className={classes} date={date}>
-            <button onClick={handleClick}>
-                <p>x</p>
+        <div className={cardClasses} date={date}>
+            <button onClick={flipDetails}>
+                <p>//</p>
             </button>
             <div className={textClass}>
-                <h3>{name}</h3>
-                <p>{description}</p>
+                {getCardContent()}
             </div>
         </div>
-    )
+    );
 }
-
+        
 export default ProjectCard;
