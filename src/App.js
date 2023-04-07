@@ -1,9 +1,8 @@
-import "./App.css";
 import WorkCard from "./components/work_card";
 import ProjectCard from "./components/project_card";
 
 function App() {
-  
+
   // create cards
   let data = require('./data/card_data.json');
 
@@ -25,10 +24,10 @@ function App() {
   );
 
   return (
-    <div>
+    <>
       {work_cards}
       {proj_cards}
-    </div>
+    </>
   )
 }
 

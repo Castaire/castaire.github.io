@@ -1,16 +1,20 @@
 
-
-
-const ProjectCard = (props) => {
+function ProjectCard({date, name, description, techList}) {
     const classes = "card projectcard"
     const textClass = "text"
 
+    function handleClick() {
+        alert('clicked!');
+    }
+
     return (
-        <div className={classes} date={props.date}>
+        <div className={classes} date={date}>
+            <button onClick={handleClick}>
+                <p>x</p>
+            </button>
             <div className={textClass}>
-                <br/>
-                <h3>{props.name}</h3>
-                <p>{props.description}</p>
+                <h3>{name}</h3>
+                <p>{description}</p>
             </div>
         </div>
     )
