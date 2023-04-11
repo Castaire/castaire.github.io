@@ -4,51 +4,45 @@
             "title": "Technical Lead",
             "company": "Conexiom",
             "date": "2021-08-01",
-            "description": "working integration projects within the Onboarding team on top of regular dev tasks",
-            "type": "work"
+            "description": "managing integration projects end-to-end within the Onboarding team"
         },
         {
             "title": "Software Developer",
             "company": "Conexiom",
             "date": "2019-06-01",
-            "description": "tackling document automation as a software dev within the Onboarding team",
-            "type": "work"
+            "description": "tackling document-flow automation within the Onboarding team"
         },
         {
             "title": "Data Coordinator",
             "company": "RecycleSmart Solutions",
             "date": "2018-05-01",
-            "description": "working with some sensor data and used tons of R",
-            "type": "work"
+            "description": "working with sensor data and used tons of R"
         },
         {
             "title": "Technical Lab Assistant",
             "company": "NINET Lab @ UBC Dept. of Psychiatry",
             "date": "2017-05-01",
-            "description": "working with EEGs and MATLAB :)",
-            "type": "work"
+            "description": "working with EEGs and MATLAB :)"
         },
         {
             "title": "Teaching Assistant",
             "company": "UBC Dept. of Computer Science",
             "date": "2017-01-01",
-            "description": "for CPSC 210 - Software Construction",
-            "type": "work"
+            "description": "for 'CPSC 210 - Software Construction'"
         }
     ],
     "project_cards": [
         {
             "name": "castaire.github.io",
             "date": "2019-02-18",
-            "description": "the very website you are viewing :) (now updated to React)",
+            "description": "the very website you are viewing :) (now updated with React)",
             "links": [
                 {
                     "description": "source",
                     "href": "https://github.com/Castaire/persona"
                 }
             ],
-            "details": "testing onlyyyy",
-            "type": "project"
+            "details": "Made with: HTML, CSS, JS"
         },
         {
             "name": "Spot-Notes",
@@ -60,8 +54,7 @@
                     "href": "https://github.com/Castaire/spot_notes"
                 }
             ],
-            "details": "testing onlyyyy",
-            "type": "project"
+            "details": "Made with: JS and some sprinkles of HTML + CSS"
         },
         {
             "name": "Nocturne",
@@ -73,8 +66,7 @@
                     "href": "https://github.com/weedle/Nocturne-GGJ2017"
                 }
             ],
-            "details": "testing onlyyyy",
-            "type": "project"
+            "details": "Made with: C#, Unity, with special thanks to the bloom effect :')"
         },
         {
             "name": "theorientkelowna",
@@ -90,8 +82,7 @@
                     "href": "https://github.com/Castaire/theOrientKelowna--2.0"
                 }
             ],
-            "details": "testing onlyyyy",
-            "type": "project"
+            "details": "Made with: HTML, CSS, JS"
         },
         {
             "name": "TSSE",
@@ -103,12 +94,11 @@
                     "href": "https://github.com/weedle/TSSE2016"
                 },
                 {
-                    "description": "stand-alone UI mini project",
+                    "description": "stand-alone UI project",
                     "href": "https://github.com/Castaire/TSSE2016---Personal-Menus"
                 }
             ],
-            "details": "testing onlyyyy",
-            "type": "project"
+            "details": "Made with: C#, Unity"
         }
     ]
 }

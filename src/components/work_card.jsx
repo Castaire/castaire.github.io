@@ -1,3 +1,4 @@
+import { useState } from "react"
 
 function WorkCard({date, title, company, description}) {
   const classes = "card workcard";
@@ -6,7 +7,6 @@ function WorkCard({date, title, company, description}) {
   return (
     <div className={classes} date={date}>
       <div className={textClass}>
-        <br />
         <h3>{company}</h3>
         <p>
           <b>{title}</b> {description}

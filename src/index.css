@@ -42,10 +42,9 @@ body {
 }
 
 .card .text {
-  position: absolute;
-  top: 20px;
   font-size: 12px;
-  margin: 5px 10px;
+  margin: 0px 10px;
+  margin-top: 40px;
 }
 
 .workcard {
@@ -73,8 +72,9 @@ body {
   padding: 0px;
   margin: 10px 10px 0px 10px;
   border: inherit;
+  border-radius: 25%;
   z-index: 1000; /* NOTE: makes sure it displays on top */
-    /*background-color: inherit;*/ /* TESTING ONLY */
+  background-color: inherit;
 }
 
 .card button p {
@@ -82,4 +82,8 @@ body {
   font-size: 12px;
   text-align: center;
   line-height: 25px;
+}
+
+.card .finetext {
+  font-size: 10px;
 }

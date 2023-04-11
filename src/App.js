@@ -20,6 +20,7 @@ function App() {
       date={pc.date}
       name={pc.name}
       description={pc.description}
+      links={pc.links}
       details={pc.details}
     />
   );

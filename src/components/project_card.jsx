@@ -1,13 +1,27 @@
 import { useState } from "react";
 
-function ProjectCard({date, name, description, details}) {
+function ProjectCard({date, name, description, links, details}) {
     const [showDetails, setDetails] = useState(false);
     
-    const cardClasses = "card projectcard"
-    const textClass = "text"
+    const cardClasses = "card projectcard";
+    const textClass = "text";
+    const fineTextClass = "finetext";
     
     function flipDetails() {
         setDetails(!showDetails);
+    }
+
+    function getLinks() {
+        return (
+            links.map(link => 
+                <>
+                <a className={fineTextClass} href={link.href} target="_blank"  rel="noreferrer">
+                    // {link.description}
+                </a>
+                <br/>
+                </>
+            )
+        );
     }
     
     function getCardContent() {
@@ -19,9 +33,12 @@ function ProjectCard({date, name, description, details}) {
                 </>
             );
         } else {
+            let linksJsx = getLinks();
             return (
                 <>
+                    <br/>
                     <p>{details}</p>
+                    {linksJsx}
                 </>
             );
         }    
