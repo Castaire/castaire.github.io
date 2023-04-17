@@ -19,7 +19,86 @@ body {
 /***************************/
 /* PALETTE */
 
-/* todo??? */
+.brickred {
+  color: #CE2F59; /* brick red */
+}
+
+.whaleblue {
+  color: #87A0B2; /* whale-blue */
+}
+
+.brickredborder {
+  border-color: #CE2F59;
+}
+
+.whaleblueborder {
+  border-color: #87A0B2;
+}
+
+.charcoalborder {
+  border-color: #3a445d; /* charcoal-black */
+}
+
+.brickredfill {
+  background-color: #CE2F59;
+}
+
+.whalebluefill {
+  background-color: #87A0B2;
+}
+
+.charcoalfill {
+  background-color: #3a445d;
+}
+
+
+/***************************/
+/* FILTER + CHECKBOX */
+
+#filterbar {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 10px;
+  margin-top: -10px;
+	border: 2px dashed #3a445d;
+	border-top: none;
+  background-color: inherit;
+	z-index: 1000;
+	max-width: 100%;
+}
+
+#filterbar p {
+	display: inline;
+	margin-left: 15px;
+	font-family: monospace;
+	letter-spacing: 0.2em;
+	font-size: 13px;
+}
+
+.checkbox {
+	align-items: center;
+	flex-grow: 1;
+  position: relative;
+  top: 18px;
+  margin: 0px 0px 36px 15px;
+	max-width: 130px;
+}
+
+/* hide original */
+input[type=checkbox] {
+  visibility: hidden;
+}
+
+/* custom checkbox */
+.checkbox label {
+	position: absolute;
+	left: 5px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	border-width: 1px;
+	border-style: dashed;
+}
 
 /***************************/
 /* CARD */
@@ -45,22 +124,6 @@ body {
   font-size: 12px;
   margin: 0px 10px;
   margin-top: 40px;
-}
-
-.workcard {
-  border-color: #CE2F59; /*brick-red*/
-}
-
-.workcard h3 {
-  color: #CE2F59; /*brick-red*/
-}
-
-.projectcard {
-  border-color: #87A0B2; /*whale-blue*/
-}
-
-.projectcard h3 {
-  border-color: #87A0B2; /*whale-blue*/
 }
 
 .card button {

@@ -3,10 +3,6 @@ import { useState } from "react";
 function ProjectCard({date, name, description, links, details}) {
     const [showDetails, setDetails] = useState(false);
     
-    const cardClasses = "card projectcard";
-    const textClass = "text";
-    const fineTextClass = "finetext";
-    
     function flipDetails() {
         setDetails(!showDetails);
     }
@@ -15,7 +11,7 @@ function ProjectCard({date, name, description, links, details}) {
         return (
             links.map(link => 
                 <>
-                <a className={fineTextClass} href={link.href} target="_blank"  rel="noreferrer">
+                <a className={"finetext"} href={link.href} target="_blank"  rel="noreferrer">
                     // {link.description}
                 </a>
                 <br/>
@@ -45,11 +41,11 @@ function ProjectCard({date, name, description, links, details}) {
     }
     
     return (
-        <div className={cardClasses} date={date}>
+        <div className="card whaleblueborder" date={date}>
             <button onClick={flipDetails}>
                 <p>//</p>
             </button>
-            <div className={textClass}>
+            <div className="text">
                 {getCardContent()}
             </div>
         </div>
