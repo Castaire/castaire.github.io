@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 function CheckBox({fillColorClass, borderColorClass, caption, defaultClick}) {
-    const [clicked, setClicked] = useState({defaultClick});
+    const [clicked, setClicked] = useState(defaultClick);
 
     function flipClicked() {
         setClicked(!clicked);

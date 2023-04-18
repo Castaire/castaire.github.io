@@ -30,14 +30,16 @@ function App() {
 
   return (
     <>
-      <div id="filterbar" className="">
-        <CheckBox caption="PROJECTS" fillColorClass={"whalebluefill"} borderColorClass={"whaleblueborder"} defaultClick={true}/>
-        <CheckBox caption="WORK" fillColorClass={"brickredfill"} borderColorClass={"brickredborder"} defaultClick={true}/>
-        <CheckBox caption="BY DATE" fillColorClass={"charcoalfill"} borderColorClass={"charcoalborder"} defaultClick={true}/>
-        <CheckBox caption="BY NAME" fillColorClass={"charcoalfill"} borderColorClass={"charcoalborder"} defaultClick={false}/>
+      <div>
+        <div id="filterbar" className="">
+          <CheckBox caption="PROJECTS" fillColorClass={"whalebluefill"} borderColorClass={"whaleblueborder"} defaultClick={true}/>
+          <CheckBox caption="WORK" fillColorClass={"brickredfill"} borderColorClass={"brickredborder"} defaultClick={true}/>
+          <CheckBox caption="BY DATE" fillColorClass={"charcoalfill"} borderColorClass={"charcoalborder"} defaultClick={true}/>
+          <CheckBox caption="BY NAME" fillColorClass={"charcoalfill"} borderColorClass={"charcoalborder"} defaultClick={false}/>
+        </div>
+        {work_cards}
+        {proj_cards}
       </div>
-      {work_cards}
-      {proj_cards}
     </>
   )
 }
