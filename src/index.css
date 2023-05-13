@@ -19,10 +19,6 @@ body {
 /***************************/
 /* PALETTE */
 
-.brickred {
-  color: #CE2F59; /* brick red */
-}
-
 .brickredborder {
   border-color: #CE2F59;
 }
@@ -32,7 +28,7 @@ body {
 }
 
 .charcoalborder {
-  border-color: #3a445d; /* charcoal-black */
+  border-color: #3a445d;
 }
 
 .brickredfill {
@@ -46,7 +42,6 @@ body {
 .charcoalfill {
   background-color: #3a445d;
 }
-
 
 /***************************/
 /* FILTER + CHECKBOX */
@@ -143,6 +138,22 @@ input[type=checkbox] {
   line-height: 25px;
 }
 
-.card .finetext {
+/* WORK CARDS */
+
+.work {
+  border-color: #CE2F59;
+}
+
+.work h3 {
+  color: #CE2F59;
+}
+
+/* PROJECT CARD */
+
+.project {
+  border-color: #87A0B2
+}
+
+.project .finetext {
   font-size: 10px;
 }

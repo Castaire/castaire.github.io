@@ -41,7 +41,7 @@ function ProjectCard({date, name, description, links, details}) {
     }
     
     return (
-        <div className="card whaleblueborder" date={date}>
+        <div className="card project" date={date} name={name}>
             <button onClick={flipDetails}>
                 <p>//</p>
             </button>
