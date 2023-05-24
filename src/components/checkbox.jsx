@@ -1,11 +1,5 @@
-import { useState } from "react";
 
-function CheckBox({fillColorClass, borderColorClass, caption, defaultClick}) {
-    const [clicked, setClicked] = useState(defaultClick);
-
-    function flipClicked() {
-        setClicked(!clicked);
-    }
+function CheckBox({caption, clicked, onClick, fillColorClass, borderColorClass}) {
 
     function getColorClasses() {
         return clicked ? `${fillColorClass} ${borderColorClass}` : `${borderColorClass}`;
@@ -14,7 +8,7 @@ function CheckBox({fillColorClass, borderColorClass, caption, defaultClick}) {
     return (
         <div className="checkbox">
             <input type="checkbox"/>
-            <label onClick={flipClicked}
+            <label onClick={onClick}
                 className={getColorClasses()}/>
             <p>{caption}</p>
         </div>
