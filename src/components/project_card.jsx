@@ -11,7 +11,7 @@ function ProjectCard({date, name, description, links, details}) {
         return (
             links.map(link => 
                 <>
-                <a className={"finetext"} href={link.href} target="_blank"  rel="noreferrer">
+                <a className={"finetext"} href={link.href} target="_blank" rel="noreferrer">
                     // {link.description}
                 </a>
                 <br/>

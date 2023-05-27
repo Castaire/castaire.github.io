@@ -49,8 +49,7 @@ body {
 #filterbar {
 	display: flex;
 	flex-wrap: wrap;
-	margin: 10px;
-  margin-top: -10px;
+	margin: -10px 15px 10px 10px;
 	border: 2px dashed #3a445d;
 	border-top: none;
   background-color: inherit;
