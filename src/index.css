@@ -44,7 +44,27 @@ body {
 }
 
 /***************************/
-/* FILTER + CHECKBOX */
+/* BOOKMARK */
+
+#bookmark {
+    width: 350px;
+    height: 300px;
+    position: fixed;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-right: 2px dashed #3a445d;
+}
+
+/***************************/
+/* BOARD + FILTER + CHECKBOX */
+
+#board {
+    float: right;
+    width: calc(100% - 355px);
+    max-width: 2000px;
+}
 
 #filterbar {
 	display: flex;

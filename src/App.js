@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import Isotope from "isotope-layout";
 
+import Bookmark from "./components/bookmark";
 import CheckBox from "./components/checkbox";
 import WorkCard from "./components/work_card";
 import ProjectCard from "./components/project_card";
@@ -9,7 +10,8 @@ function App() {
   // clickbox states
   const [showWork, flipShowWork] = useState(true);
   const [showProject, flipShowProject] = useState(true);
-  const [sortKey, setSortKey] = useState('date'); // 'date' or 'name'
+  const [sortByDate, setSortByDate] = useState(true);
+  const [sortByName, setSortByName] = useState(false);
 
   // setup isotope
   const isotope = useRef(); // persist isotope in between renders
@@ -35,8 +37,7 @@ function App() {
 
   useEffect(() => {
     var options = {
-      filter: '*',
-      sortBy: sortKey
+      filter: '*'
     };
 
     if (!showWork && !showProject) {
@@ -47,15 +48,17 @@ function App() {
       options.filter = '.project';
     }
 
-    if (sortKey == 'date') {
+    if (sortByDate) {
+      options.sortBy = 'date';
       options.sortAscending = false;
-    } else if (sortKey == 'name') {
+    } else if (sortByName) {
+      options.sortBy = 'name';
       options.sortAscending = true;
     }
 
     isotope.current.arrange(options);
 
-  }, [isotope, showWork, showProject, sortKey]);
+  }, [isotope, showWork, showProject, sortByDate, sortByName]);
 
   // create cards
   let data = require("./data/card_data.json");
@@ -87,9 +90,10 @@ function App() {
 
   let by_date_checkbox = <CheckBox
     caption="DATE"
-    clicked={sortKey === 'date'}
+    clicked={sortByDate}
     onClick={() => {
-      setSortKey('date');
+      setSortByDate(!sortByDate);
+      setSortByName(!sortByName);
     }}
     fillColorClass={"charcoalfill"}
     borderColorClass={"charcoalborder"}
@@ -97,9 +101,10 @@ function App() {
 
   let by_name_checkbox = <CheckBox
     caption="NAME"
-    clicked={sortKey === 'name'}
+    clicked={sortByName}
     onClick={() => {
-      setSortKey('name');
+      setSortByName(!sortByName);
+      setSortByDate(!sortByDate);
     }}
     fillColorClass={"charcoalfill"}
     borderColorClass={"charcoalborder"}
@@ -107,30 +112,83 @@ function App() {
 
   return (
     <>
-      <div id="filterbar">
-        <CheckBox
-          caption="PROJECTS"
-          clicked={showProject}
-          onClick={() => flipShowProject(!showProject)}
-          fillColorClass={"whalebluefill"}
-          borderColorClass={"whaleblueborder"}
-        />
-        <CheckBox
-          caption="WORK"
-          clicked={showWork}
-          onClick={() => flipShowWork(!showWork)}
-          fillColorClass={"brickredfill"}
-          borderColorClass={"brickredborder"}
-        />
-        {by_date_checkbox}
-        {by_name_checkbox}
-      </div>
-      <div className="card-container">
-        {work_cards}
-        {proj_cards}
+      <Bookmark />
+      <div id="board">
+        <div id="filterbar">
+          <CheckBox
+            caption="PROJECTS"
+            clicked={showProject}
+            onClick={() => flipShowProject(!showProject)}
+            fillColorClass={"whalebluefill"}
+            borderColorClass={"whaleblueborder"}
+          />
+          <CheckBox
+            caption="WORK"
+            clicked={showWork}
+            onClick={() => flipShowWork(!showWork)}
+            fillColorClass={"brickredfill"}
+            borderColorClass={"brickredborder"}
+          />
+          <CheckBox
+            caption="DATE"
+            clicked={sortByDate}
+            onClick={() => {
+              setSortByDate(!sortByDate);
+              setSortByName(!sortByName);
+            }}
+            fillColorClass={"charcoalfill"}
+            borderColorClass={"charcoalborder"}
+          />
+          <CheckBox
+            caption="NAME"
+            clicked={sortByName}
+            onClick={() => {
+              setSortByName(!sortByName);
+              setSortByDate(!sortByDate);
+            }}
+            fillColorClass={"charcoalfill"}
+            borderColorClass={"charcoalborder"}
+          />
+        </div>
+        <div className="card-container">
+          {work_cards}
+          {proj_cards}
+        </div>
       </div>
     </>
   );
+
+  /*
+  return (
+    <>
+      <Bookmark />
+      <div id="board">
+        <div id="filterbar">
+          <CheckBox
+            caption="PROJECTS"
+            clicked={showProject}
+            onClick={() => flipShowProject(!showProject)}
+            fillColorClass={"whalebluefill"}
+            borderColorClass={"whaleblueborder"}
+          />
+          <CheckBox
+            caption="WORK"
+            clicked={showWork}
+            onClick={() => flipShowWork(!showWork)}
+            fillColorClass={"brickredfill"}
+            borderColorClass={"brickredborder"}
+          />
+          {by_date_checkbox}
+          {by_name_checkbox}
+        </div>
+        <div className="card-container">
+          {work_cards}
+          {proj_cards}
+        </div>
+      </div>
+    </>
+  );
+  */
 }
 
 export default App;

@@ -1,4 +1,3 @@
-
 function CheckBox({caption, clicked, onClick, fillColorClass, borderColorClass}) {
 
     function getColorClasses() {
