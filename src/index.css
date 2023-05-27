@@ -48,13 +48,62 @@ body {
 
 #bookmark {
     width: 350px;
-    height: 300px;
     position: fixed;
     float: left;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     border-right: 2px dashed #3a445d;
+    color: #3a445d;
+    text-align: center;
+}
+
+#bookmark h1 {
+    font-size: 42px;
+    font-family: 'Dosis', monospace;
+    letter-spacing: 0.1em;
+}
+
+#bookmark p {
+    font-size: 13px;
+    font-family: monospace;
+    line-height: 1.6;
+}
+
+#bookmark .align-left {
+    text-align: left;
+    margin-left: 15px;
+}
+
+.bookmark-section {
+    border-bottom: 2px dashed #3a445d;
+}
+
+/* inverse-highlighting */
+span {
+    color: #F7F3E6;
+    background-color: #3a445d;
+}
+
+#bookmark .align-label-left {
+    float: left;
+    margin-left: 0px;
+}
+
+a {
+    color: #3A445D;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: left;
+}
+
+a:visited {
+    color: #3A445D;
+}
+
+a:hover {
+    color: #87a0b2;
+    text-decoration: underline;
 }
 
 /***************************/
