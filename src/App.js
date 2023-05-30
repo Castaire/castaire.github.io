@@ -88,28 +88,6 @@ function App() {
     )
   });
 
-  let by_date_checkbox = <CheckBox
-    caption="DATE"
-    clicked={sortByDate}
-    onClick={() => {
-      setSortByDate(!sortByDate);
-      setSortByName(!sortByName);
-    }}
-    fillColorClass={"charcoalfill"}
-    borderColorClass={"charcoalborder"}
-  />
-
-  let by_name_checkbox = <CheckBox
-    caption="NAME"
-    clicked={sortByName}
-    onClick={() => {
-      setSortByName(!sortByName);
-      setSortByDate(!sortByDate);
-    }}
-    fillColorClass={"charcoalfill"}
-    borderColorClass={"charcoalborder"}
-  />
-
   return (
     <>
       <Bookmark />
@@ -157,38 +135,6 @@ function App() {
       </div>
     </>
   );
-
-  /*
-  return (
-    <>
-      <Bookmark />
-      <div id="board">
-        <div id="filterbar">
-          <CheckBox
-            caption="PROJECTS"
-            clicked={showProject}
-            onClick={() => flipShowProject(!showProject)}
-            fillColorClass={"whalebluefill"}
-            borderColorClass={"whaleblueborder"}
-          />
-          <CheckBox
-            caption="WORK"
-            clicked={showWork}
-            onClick={() => flipShowWork(!showWork)}
-            fillColorClass={"brickredfill"}
-            borderColorClass={"brickredborder"}
-          />
-          {by_date_checkbox}
-          {by_name_checkbox}
-        </div>
-        <div className="card-container">
-          {work_cards}
-          {proj_cards}
-        </div>
-      </div>
-    </>
-  );
-  */
 }
 
 export default App;

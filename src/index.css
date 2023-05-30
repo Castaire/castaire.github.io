@@ -118,11 +118,10 @@ a:hover {
 #filterbar {
 	display: flex;
 	flex-wrap: wrap;
-	margin: -10px 15px 10px 10px;
+	margin: -10px 15px 10px 15px;
 	border: 2px dashed #3a445d;
 	border-top: none;
   background-color: inherit;
-	z-index: 1000;
 	max-width: 100%;
 }
 
@@ -161,6 +160,11 @@ input[type=checkbox] {
 
 /***************************/
 /* CARD */
+
+.card-container {
+  margin-top: 0px;
+  margin-left: 5px;
+}
 
 .card {
   position: relative;
