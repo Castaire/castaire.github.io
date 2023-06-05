@@ -109,7 +109,7 @@ function App() {
             borderColorClass={"brickredborder"}
           />
           <CheckBox
-            caption="DATE"
+            caption="BY DATE"
             clicked={sortByDate}
             onClick={() => {
               setSortByDate(!sortByDate);
@@ -119,7 +119,7 @@ function App() {
             borderColorClass={"charcoalborder"}
           />
           <CheckBox
-            caption="NAME"
+            caption="BY NAME"
             clicked={sortByName}
             onClick={() => {
               setSortByName(!sortByName);

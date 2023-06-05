@@ -37,7 +37,7 @@ function Bookmark() {
       </div>
       <div className="bookmark-section" id="quests">
         <p>
-          <span>&nbsp; Current Quests &nbsp;</span>
+          <span>&nbsp; Current Quests: &nbsp;</span>
           <br />
         </p>
         <p className="align-left">

@@ -128,6 +128,7 @@ a:hover {
 	border-top: none;
   background-color: inherit;
 	max-width: 100%;
+  align-items: center;
 }
 
 #filterbar p {
@@ -139,12 +140,15 @@ a:hover {
 }
 
 .checkbox {
-	align-items: center;
+  display: flex;
+  align-items: center;
 	flex-grow: 1;
   position: relative;
-  top: 18px;
-  margin: 0px 0px 36px 15px;
-	max-width: 130px;
+  height: 50px;
+	max-width: 120px;
+  padding-top: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 /* hide original */
@@ -240,4 +244,101 @@ input[type=checkbox] {
 
 .project .finetext {
   font-size: 10px;
+}
+
+/***************************/
+/* SCREEN-SIZE ADJUSTMENTS */
+
+/*
+*   USAGE: change card display from grid to hamburger 
+*/
+@media (max-width: 815px) {
+  #bookmark {
+    float: none;
+    position: relative;
+    width: auto;
+    margin: 20px 45px;
+    border-left: 2px dashed #3A445D;
+    border-top: 2px dashed #3A445D;
+  }
+
+  .bookmark-section {
+    padding: 10px 50px 10px 50px;
+  }
+
+  #filterbar {
+    width: auto;
+    border-top: 2px dashed #3A445D;
+    margin: 0px 0px 10px 0px;
+  }
+
+  .checkbox {
+    padding-top: 5px;
+  }
+
+  #board {
+    float: none;
+    position: relative;
+    width: auto;
+    margin: 10px 45px;
+  }
+}
+
+/*
+*   USAGE: set cards to full width
+*/
+@media (max-width: 680px) {
+  #board {
+    width: auto;
+    margin-bottom: 45px;
+  }
+
+  .card-container {
+    margin: 0px;
+  }
+
+  .card {
+    width: 100%;
+    height: 170px;
+    margin: 0px;
+    margin-top: 10px;
+  }
+}
+
+/*
+*   USAGE: mobile revamp; reduce overall font-size, expand all
+*/
+@media (max-width: 510px) {
+  #bookmark {
+    margin: 20px;
+  }
+
+  #bookmark h1 {
+    font-size: 40px;
+  }
+
+  #bookmark p {
+    font-size: 11px;
+  }
+
+  #filterbar p {
+    font-size: 11px;
+  }
+
+  .card h3 {
+    font-size: 15px;
+  }
+
+  .card .text {
+    font-size: 11px;
+  }
+
+  .card button p {
+    font-size: 10px;
+  }
+
+  .project .finetext {
+    font-size: 9px;
+  }
+
 }
