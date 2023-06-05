@@ -2,6 +2,7 @@
 /* GENERAL */
 
 body {
+  margin: 0px;
   background-color: #F7F3E6; /*linen-white*/
 }
 
@@ -79,13 +80,17 @@ body {
     border-bottom: 2px dashed #3a445d;
 }
 
+#contact {
+  text-align: left;
+}
+
 /* inverse-highlighting */
 span {
     color: #F7F3E6;
     background-color: #3a445d;
 }
 
-#bookmark .align-label-left {
+.align-label-left {
     float: left;
     margin-left: 0px;
 }
@@ -94,7 +99,7 @@ a {
     color: #3A445D;
     text-decoration: none;
     cursor: pointer;
-    text-align: left;
+    /*text-align: left;*/
 }
 
 a:visited {
@@ -118,7 +123,7 @@ a:hover {
 #filterbar {
 	display: flex;
 	flex-wrap: wrap;
-	margin: -10px 15px 10px 15px;
+	margin: -10px 20px 10px 15px;
 	border: 2px dashed #3a445d;
 	border-top: none;
   background-color: inherit;
@@ -201,6 +206,7 @@ input[type=checkbox] {
   border-radius: 25%;
   z-index: 1000; /* NOTE: makes sure it displays on top */
   background-color: inherit;
+  cursor: pointer;
 }
 
 .card button p {
@@ -208,6 +214,12 @@ input[type=checkbox] {
   font-size: 12px;
   text-align: center;
   line-height: 25px;
+}
+
+/* NOTE: only project cards have buttons */
+.project .invert-button-style {
+  color: #F7F3E6;
+  background-color: #87A0B2;
 }
 
 /* WORK CARDS */

@@ -7,15 +7,15 @@ import WorkCard from "./components/work_card";
 import ProjectCard from "./components/project_card";
 
 function App() {
+
   // clickbox states
   const [showWork, flipShowWork] = useState(true);
   const [showProject, flipShowProject] = useState(true);
   const [sortByDate, setSortByDate] = useState(true);
   const [sortByName, setSortByName] = useState(false);
 
-  // setup isotope
+  // set up isotope
   const isotope = useRef(); // persist isotope in between renders
-
   useEffect(() => {
     isotope.current = new Isotope(".card-container", {
       itemSelector: ".card",
@@ -35,6 +35,7 @@ function App() {
     };
   }, []);
 
+  // sort and filter cards
   useEffect(() => {
     var options = {
       filter: '*'

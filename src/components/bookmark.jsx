@@ -1,4 +1,7 @@
 function Bookmark() {
+
+  /* Custom bookmark */
+  
   return (
     <div id="bookmark">
       <div className="bookmark-section" id="intro">
@@ -49,7 +52,7 @@ function Bookmark() {
       </div>
       <div className="bookmark-section" id="contact">
         <p>
-          <span className="align-label-left">&nbsp; Find me: &nbsp;</span>
+          <span className="align-label-left">&nbsp; Find me: &nbsp;</span>&nbsp;
           <a href="mailto:jenne.hui@gmail.com">@ Email</a>&nbsp;|&nbsp;
           <a href="https:/github.com/Castaire" target="_blank" rel="noreferrer">
             @ Github
@@ -60,13 +63,11 @@ function Bookmark() {
           </a>
           <br />
           <br />
-          <span className="align-label-left">&nbsp; Resumé: &nbsp;&nbsp;</span>
+          <span className="align-label-left">&nbsp; Resumé: &nbsp;&nbsp;</span>&nbsp;
           <a
             href="https://drive.google.com/file/d/1pdRSdhnTEST1nVU_5TGB3oxceSqquyi-/view?usp=sharing"
-            target="_blank"
-			rel="noreferrer"
-          >
-            ----------{">"} right here!
+            target="_blank" rel="noreferrer">
+            right here!
           </a>
         </p>
       </div>

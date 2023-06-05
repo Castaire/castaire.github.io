@@ -43,11 +43,26 @@ function ProjectCard({ date, name, description, links, details }) {
     }
   }
 
+  function renderButton() {
+    if (showDetails) {
+      return (
+        <button className="invert-button-style" onClick={flipDetails}>
+          <p>//</p>
+        </button>
+      );
+    }
+    else {
+      return (
+        <button onClick={flipDetails}>
+          <p>//</p>
+        </button>
+      );
+    }
+  }
+
   return (
     <div className="card project" date={date} name={name}>
-      <button onClick={flipDetails}>
-        <p>//</p>
-      </button>
+      {renderButton()}
       <div className="text">{getCardContent()}</div>
     </div>
   );
