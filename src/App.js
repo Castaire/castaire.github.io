@@ -14,6 +14,13 @@ function App() {
   const [sortByDate, setSortByDate] = useState(true);
   const [sortByName, setSortByName] = useState(false);
 
+  // set html headers
+  useEffect(() => {
+    document.title = '// jenne hui //';
+    document.characterSet = "UTF-8";
+    }, 
+  []);
+
   // set up isotope
   const isotope = useRef(); // persist isotope in between renders
   useEffect(() => {
