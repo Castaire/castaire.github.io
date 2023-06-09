@@ -33,13 +33,13 @@
     ],
     "project_cards": [
         {
-            "name": "castaire.github.io",
+            "name": "castaire.github.io (2.0)",
             "date": "2019-02-18",
             "description": "the very website you are viewing :) (now updated with React)",
             "links": [
                 {
                     "description": "source",
-                    "href": "https://github.com/Castaire/persona"
+                    "href": "https://github.com/Castaire/castaire.github.io"
                 }
             ],
             "details": "Made with: HTML, CSS, JS"
