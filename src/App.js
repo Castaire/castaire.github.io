@@ -17,7 +17,6 @@ function App() {
   // set html headers
   useEffect(() => {
     document.title = '// jenne hui //';
-    document.characterSet = "UTF-8";
     }, 
   []);
 

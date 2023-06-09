@@ -117,7 +117,6 @@ a:hover {
 #board {
     float: right;
     width: calc(100% - 355px);
-    max-width: 2000px;
 }
 
 #filterbar {
@@ -127,7 +126,7 @@ a:hover {
 	border: 2px dashed #3a445d;
 	border-top: none;
   background-color: inherit;
-	max-width: 100%;
+	max-width: 900px;
   align-items: center;
 }
 
@@ -173,6 +172,7 @@ input[type=checkbox] {
 .card-container {
   margin-top: 0px;
   margin-left: 5px;
+  max-width: 1000px;
 }
 
 .card {
@@ -309,8 +309,9 @@ input[type=checkbox] {
 *   USAGE: mobile revamp; reduce overall font-size, expand all
 */
 @media (max-width: 510px) {
+  
   #bookmark {
-    margin: 20px;
+    margin: 15px;
   }
 
   #bookmark h1 {
@@ -321,8 +322,16 @@ input[type=checkbox] {
     font-size: 11px;
   }
 
+  .bookmark-section {
+    padding: 15px;
+  }
+
   #filterbar p {
     font-size: 11px;
+  }
+
+  #board {
+    margin: 10px 30px;
   }
 
   .card h3 {
