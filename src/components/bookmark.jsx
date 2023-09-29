@@ -24,7 +24,7 @@ function Bookmark() {
           <br />
         </p>
         <p className="align-left">
-          - building random small projects
+          - building out weekend projects
           <br />
           - learning and playing music
           <br />
@@ -37,16 +37,15 @@ function Bookmark() {
       </div>
       <div className="bookmark-section" id="quests">
         <p>
-          <span>&nbsp; Current Quests: &nbsp;</span>
+          <span>&nbsp; What I am up to: &nbsp;</span>
           <br />
         </p>
         <p className="align-left">
-          - continue learning the violin
+          - violining lots
           <br />
-          - building out larger personal projects
+          - learning Go web development
           <br />
-          - looking for the next opportunity
-          <br />
+          - seeking out niche coffee profiles 
         </p>
         <br />
       </div>
@@ -65,7 +64,7 @@ function Bookmark() {
           <br />
           <span className="align-label-left">&nbsp; Resumé: &nbsp;&nbsp;</span>&nbsp;
           <a
-            href="https://drive.google.com/file/d/1pdRSdhnTEST1nVU_5TGB3oxceSqquyi-/view?usp=sharing"
+            href="https://drive.google.com/file/d/1RYxuOXgPbm9fZaeqAwM89WrVU9JRE_vh/view?usp=drive_link"
             target="_blank" rel="noreferrer">
             right here!
           </a>

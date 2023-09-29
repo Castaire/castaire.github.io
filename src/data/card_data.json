@@ -3,26 +3,32 @@
         {
             "title": "Integration Lead",
             "company": "Conexiom",
+            "date": "2023-01-01",
+            "description": "managing integration projects and R&D-ing pipeline replacement using Workato"
+        },
+        {
+            "title": "Team Lead",
+            "company": "Conexiom",
             "date": "2021-08-01",
-            "description": "managing integration projects end-to-end within the Services team"
+            "description": "leading a team of 7 devs, handling esclations, and system escalations on top of dev work :')"
         },
         {
             "title": "Software Developer",
             "company": "Conexiom",
             "date": "2019-06-01",
-            "description": "tackling document-flow automation within the Services team"
+            "description": "tackling document automation and writing custom integrations + plugins"
         },
         {
             "title": "Data Coordinator",
             "company": "RecycleSmart Solutions",
             "date": "2018-05-01",
-            "description": "working with sensor data and used tons of R"
+            "description": "working with sensor data to optimize delivery scheduling via R"
         },
         {
             "title": "Technical Lab Assistant",
             "company": "NINET Lab @ UBC Dept. of Psychiatry",
             "date": "2017-05-01",
-            "description": "working with EEGs and MATLAB :)"
+            "description": "developing tools to visualize EEG data using MATLAB :)"
         },
         {
             "title": "Teaching Assistant",
