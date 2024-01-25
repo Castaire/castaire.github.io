@@ -24,11 +24,11 @@ function Bookmark() {
           <br />
         </p>
         <p className="align-left">
-          - building out weekend projects
+          - building single-evening projects
           <br />
-          - learning and playing music
+          - learning and making music
           <br />
-          - engineering dubiously in Hyrule
+          - cooking dubiously
           <br />
           <br />
         </p>
@@ -43,9 +43,8 @@ function Bookmark() {
         <p className="align-left">
           - violining lots
           <br />
-          - learning Go web development
+          - LeetCoding for days :^)
           <br />
-          - seeking out niche coffee profiles 
         </p>
         <br />
       </div>

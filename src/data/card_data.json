@@ -1,16 +1,16 @@
 {
     "work_cards": [
         {
-            "title": "Integration Lead",
+            "title": "Software Developer II",
             "company": "Conexiom",
             "date": "2023-01-01",
-            "description": "managing integration projects and R&D-ing pipeline replacement using Workato"
+            "description": "In a R&D team to improve document flow and managing finicky integration projects"
         },
         {
             "title": "Team Lead",
             "company": "Conexiom",
             "date": "2021-08-01",
-            "description": "leading a team of 7 devs, handling esclations, and system escalations on top of dev work :')"
+            "description": "leading a team of 7 devs and handling system escalations on top of regular dev work"
         },
         {
             "title": "Software Developer",
@@ -22,7 +22,7 @@
             "title": "Data Coordinator",
             "company": "RecycleSmart Solutions",
             "date": "2018-05-01",
-            "description": "working with sensor data to optimize delivery scheduling via R"
+            "description": "working with sensor data and models to optimize delivery scheduling via R"
         },
         {
             "title": "Technical Lab Assistant",
