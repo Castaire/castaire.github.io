@@ -1,19 +1,19 @@
 {
     "work_cards": [
         {
-            "title": "Software Developer II",
+            "title": "Software Developer 3",
             "company": "Conexiom",
             "date": "2023-01-01",
-            "description": "In a R&D team to improve document flow and managing finicky integration projects"
+            "description": "in a R&D team focusing on document-processing alternatives and managing finicky integration projects"
         },
         {
             "title": "Team Lead",
             "company": "Conexiom",
             "date": "2021-08-01",
-            "description": "leading a team of 7 devs and handling system escalations on top of regular dev work"
+            "description": "leading a team of 5 devs and handling system escalations on top of regular dev work"
         },
         {
-            "title": "Software Developer",
+            "title": "Software Developer 1",
             "company": "Conexiom",
             "date": "2019-06-01",
             "description": "tackling document automation and writing custom integrations + plugins"
